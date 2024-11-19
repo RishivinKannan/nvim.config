@@ -1,6 +1,11 @@
 return {
   { "shaunsingh/nord.nvim" },
-  { "projekt0n/github-nvim-theme" },
+  {
+    "projekt0n/github-nvim-theme",
+    config = function()
+      vim.cmd("colorscheme github_dark_tritanopia")
+    end,
+  },
   {
     "navarasu/onedark.nvim",
     config = function()
