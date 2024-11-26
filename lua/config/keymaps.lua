@@ -16,8 +16,8 @@ vim.keymap.set("n", "<leader>sN", "<cmd>noautocmd w <CR>", opts)
 vim.keymap.set("v", "p", '"_dP', opts)
 
 -- Move text up and down
-vim.keymap.set("v", "<A-j>", ":m .+1<CR>==", opts)
-vim.keymap.set("v", "<A-k>", ":m .-2<CR>==", opts)
+vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
+vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 
 -- quit file
 vim.keymap.set("n", "<C-q>", "<cmd> q <CR>", opts)
